@@ -37,7 +37,7 @@ h1 {
   font-family: Poppins;
   font-size: 2cm;
   color: rgb(123, 179, 160);
-  font-weight: bold;
+  font-weight:bold;
 }
 
 
@@ -58,7 +58,7 @@ h2{
 
 
 iframe{
-  align-content: center;
+  align-content: right;
   margin-top: 2cm;
   border-radius: 25px;
   padding: 20px;
@@ -67,5 +67,11 @@ iframe{
 
 h6{
   font-size: 1cm;
-  font-family:"Amatic SC";
+  font-family:monospace;
+}
+
+p{
+  font-size: 0.5cm;
+  font-family: monospace;
+  font-weight: bold;
 }
