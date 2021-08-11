@@ -18,10 +18,7 @@ body {
 }
 
 h1 {
-  font-family: sans-serif;
-  font-size: 60px;
-  letter-spacing: -5px;
-  
+  font-size: 4px;
 }
 
 .container {
@@ -38,6 +35,7 @@ h1 {
 
 .admin {
   font-family: Poppins;
+  font-size: 2cm;
   color: rgb(123, 179, 160);
   font-weight: bold;
 }
@@ -62,4 +60,12 @@ h2{
 iframe{
   align-content: center;
   margin-top: 2cm;
+  border-radius: 25px;
+  padding: 20px;
+  height: 3.2cm;
+}
+
+h6{
+  font-size: 1cm;
+  font-family:"Amatic SC";
 }
