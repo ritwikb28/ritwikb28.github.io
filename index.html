@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ritwik Bhardwaj</title>
+<meta name="description" content="Ritwik Bhardwaj — graduate student in applied statistics working on computational social science, NLP, and large-scale text data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1c1c1c;
+    --muted: #6b6b6b;
+    --faint: #d8d6d2;
+    --link: #1f4e8c;
+    --bg: #fffefb;
+    --serif: "Source Serif 4", Georgia, serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { font-size: 17px; }
+
+  body {
+    font-family: var(--serif);
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.65;
+    max-width: 41rem;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+    text-transform: lowercase;
+  }
+
+  a { color: var(--link); text-decoration: none; border-bottom: 1px solid var(--faint); }
+  a:hover, a:focus-visible { border-bottom-color: var(--link); }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.8rem;
+    align-items: start;
+  }
+
+  header img {
+    width: 8.5rem;
+    height: 8.5rem;
+    object-fit: cover;
+    object-position: 50% 38%;
+    border-radius: 2px;
+    border: 1px solid var(--faint);
+  }
+
+  header h1 {
+    font-size: 1.65rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  header .tagline {
+    color: var(--muted);
+    margin-top: 0.35rem;
+    font-style: italic;
+  }
+
+  nav {
+    margin-top: 1.4rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+  nav a { color: var(--ink); border-bottom: none; margin-right: 1.4rem; }
+  nav a:hover { color: var(--link); }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--faint);
+    margin: 2.6rem 0;
+  }
+
+  section { margin-top: 2.8rem; }
+
+  h2 {
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: lowercase;
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+  }
+
+  p + p { margin-top: 0.9rem; }
+
+  /* CV-style entries: mono date in the left gutter */
+  .entry {
+    display: grid;
+    grid-template-columns: 8.2rem 1fr;
+    gap: 1.2rem;
+    margin-bottom: 1.35rem;
+  }
+  .entry .when {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    padding-top: 0.35rem;
+    letter-spacing: 0.02em;
+  }
+  .entry .what strong { font-weight: 600; }
+  .entry .what .where { color: var(--muted); }
+  .entry .what .note {
+    font-size: 0.93rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+
+  /* Publications numbered like citations */
+  .pub {
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    gap: 0.6rem;
+    margin-bottom: 1.15rem;
+  }
+  .pub .num {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    padding-top: 0.3rem;
+  }
+  .pub .status {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    display: block;
+    margin-top: 0.15rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.03em;
+  }
+
+  @media (max-width: 560px) {
+    body { padding-top: 3rem; }
+    header { grid-template-columns: 1fr; }
+    header img { order: -1; width: 7rem; height: 7rem; }
+    .entry { grid-template-columns: 1fr; gap: 0.15rem; }
+    .entry .when { padding-top: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Ritwik Bhardwaj</h1>
+    <p class="tagline">computational social science, statistics, political institutions</p>
+    <nav aria-label="Sections">
+      <a href="#about">about</a>
+      <a href="#research">research</a>
+      <a href="#publications">publications</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+  <img src="ritwik.png" alt="Ritwik Bhardwaj in Seattle">
+</header>
+
+<hr>
+
+<section id="about">
+  <p>
+    i am an incoming master's student in <strong>applied statistics at penn state</strong>
+    where i work as a graduate researcher on problems in poltical science, social media, and AI. i graduated in mathematics from the ohio state university 
+    in spring 2026, where i worked on difficult computaional probelms related to supreme court datasets.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+
+  <div class="entry">
+    <div class="when">2026 — present</div>
+    <div class="what">
+      <strong>graph machine learning, platform incentives, polarization</strong>
+      <span class="where"> smeal college of business + department of political science, penn state</span>
+      <p class="note">i am interested in understanding how political elites interact on social media platforms by contructing networks and using modern
+        ai tools. moreover, how this behavior is shaped by the design and incentives of the platforms themselves. i collabrate with dr. wael jabr, dr. bruce desmarais, and dr. yubai yuan.
+      </p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">2025 — present</div>
+    <div class="what">
+      <strong>large scale data analytics,  supreme court, methodology</strong>
+      <span class="where"> american insitutions & methodology (aim) lab, the ohio state university</span>
+      <p class="note">i lead custom nlp efforts to categorize and analyze 100,000+ supreme court writ petitions. 
+        i have 3+ manuscripts in review/progress with dr. janet box-seteffensmeir, dr. sahar abi-hassan, dr. dino p. christenson.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="when">summer 2025</div>
+    <div class="what">
+      <strong>ai engineering, agents</strong>
+      <span class="where">· sarvam</span>
+      <p class="note">contributed to production infrastructure for multilingual LLM agents. understood image and video processing capabilities for agents. sarvam is 
+        the leading ai company in india.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>publications &amp; working papers</h2>
+
+  <div class="pub">
+    <div class="num">[1]</div>
+    <div>
+      <strong>Ritwik Bhardwaj</strong>, Ian Stanton Sahar Abi-Hassan, Janet M. Box-Steffensmeier, Dino P. Christenson, Chandler L'Hommedieu. “Understanding Large Legal Corpora Using Weakly Supervised Topic Modeling.”
+      <span class="status">Under review</span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="num">[2]</div>
+    <div>
+      Sahar Abi-Hassan, Janet M. Box-Steffensmeier, Dino P. Christenson, Chandler L'Hommedieu,
+      Laura Berente, <strong>Ritwik Bhardwaj</strong>, Haikal Bin Rozaidi, Ian Stanton, Enan Srivastava.
+      “U.S. Supreme Court Case Selection: The Impact of External Actors.”
+      <span class="status">Completed · expected Summer 2026</span>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="num">[3]</div>
+    <div>
+      Sahar Abi-Hassan, Janet M. Box-Steffensmeier, Dino P. Christenson, Chandler L'Hommedieu,
+      <strong>Ritwik Bhardwaj</strong>, Ian Stanton. Statistical and computational methods paper.
+      <span class="status">In progress · expected Summer 2026</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>contact</h2>
+  <p>
+    <a href="mailto:rqb5746@psu.edu">rqb5746@psu.edu</a><br>
+    state college, pa
+  </p>
+</section>
+
+<footer>
+  last updated june 2026
+</footer>
+
+</body>
+</html>
